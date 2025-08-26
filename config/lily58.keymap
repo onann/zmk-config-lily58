@@ -49,8 +49,16 @@
                                                  &trans             &trans        &trans        &trans    &trans      &trans      &trans     &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings {
+        encoder0: encoder_0 {
+            bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
+        // encoder1 puedes dejarlo vacío o darle otro comportamiento
+        // encoder1: encoder_1 {
+        //     bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        // };
+    };
+};
 
         raise_layer {
             // ------------------------------------------------------------------------------------------------------------
