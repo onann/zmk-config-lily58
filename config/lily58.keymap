@@ -51,12 +51,11 @@
 
             sensor-bindings {
         encoder0: encoder_0 {
-            bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            bindings = <&kp A>;  // Giro horario → A
         };
-        // encoder1 puedes dejarlo vacío o darle otro comportamiento
-        // encoder1: encoder_1 {
-        //     bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-        // };
+        encoder1: encoder_1 {
+            bindings = <&kp B>;  // Giro horario → B
+        };
     };
 };
 
